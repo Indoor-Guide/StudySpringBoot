@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:h2:/Users/leekyoungchang/Desktop/study/computer/backend/h2/project
+    username: sa
+    password: 1234
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+      properties:
+        hibernate:
+          #        show_sql: true   # System out
+          format_sql: true
+logging:
+  level:
+    org.hibernate.SQL: debug    # Logger
+    org.hibernate.type: trace   # Show Query Parameter
