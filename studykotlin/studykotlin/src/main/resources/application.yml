@@ -11,6 +11,10 @@ spring:
         hibernate:
           #        show_sql: true   # System out
           format_sql: true
+
+  jwt:
+    secret: SSAFYD206DijkstraAlgorithmTestTTOTLENTHENSLds23adlx2toTOGKALDXLZLXZLA13FCXKATYOUKadfaf66969GOTIGIALXZVXWE12123UKNOW
+
 logging:
   level:
     org.hibernate.SQL: debug    # Logger

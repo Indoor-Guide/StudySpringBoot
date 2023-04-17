@@ -3,6 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
 	id("org.springframework.boot") version "2.7.10"
 	id("io.spring.dependency-management") version "1.0.15.RELEASE"
+	id("org.jetbrains.kotlin.plugin.jpa") version "1.8.20"
 	kotlin("jvm") version "1.6.21"
 	kotlin("plugin.spring") version "1.6.21"
 	kotlin("plugin.jpa") version "1.6.21"
@@ -32,6 +33,11 @@ dependencies {
 
 	// h2 DB 추가
 	implementation("com.h2database:h2:1.4.199")
+
+	// jwt token 추가
+	implementation("io.jsonwebtoken:jjwt-api:0.11.2")
+	implementation("io.jsonwebtoken:jjwt-impl:0.11.2")
+	implementation("io.jsonwebtoken:jjwt-jackson:0.11.2")
 
 	compileOnly("org.projectlombok:lombok")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
